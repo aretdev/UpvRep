@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Rectangulo
+comment0.text=\r\n\ Define\ un\ rectangulo\ de\ determinadas\ base\ y\ altura\r\n\ \r\n\ @version\ Curso\ 2018-19\r\n
+comment1.params=b\ a
+comment1.target=Rectangulo(double,\ double)
+comment1.text=Crea\ un\ rectangulo\ de\ base\ b,\ altura\ a
+comment2.params=
+comment2.target=double\ area()
+comment2.text=Devuelve\ el\ area\ del\ Rectangulo
+comment3.params=
+comment3.target=double\ perimetro()
+comment3.text=Devuelve\ el\ perimetro\ del\ Rectangulo
+numComments=4

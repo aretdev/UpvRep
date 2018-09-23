@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=PrimerPrograma
+comment0.text=\n\ Clase\ PrimerPrograma\:\ PROGRAMA\ que\ dibuja\ en\ una\ cierta\ pizarra\ \n\ un\ circulo\ y\ dos\ rectangulos\ de\ caracteristicas\ dadas;\ para\ ello,\ \n\ USA\ las\ clases\ Pizarra,\ Circulo\ y\ Rectangulo\ \n\ \n\ @version\ Curso\ 2016-2017\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+numComments=2
