@@ -2,6 +2,8 @@
  * Informa, a partir de un rectángulo y de un círculo qué área de ambos es la mayor 
  * 
  * @version Curso 2018-2019
+ * 
+ * @Aretdev_
  */
 
 public class Principal {
