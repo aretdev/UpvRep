@@ -1,6 +1,7 @@
 package pract5;
 
 
+
 /**  
  *  Clase Point: clase "tipo de datos" que define un punto en el plano 
  *  cartesiano, determinado por sus coordenadas x e y. 
@@ -102,31 +103,38 @@ public class Point {
      *  - Si el rayo lo cruza por un punto entre u y v, devuelve CROSS.
      *  - Si el rayo lo cruza por el extremo mas alto, devuelve HIGH_CROSS.
      */
-    public int cross(Point u, Point v) {        
-        int cut = DONT_CROSS;
+    public int cross(Point u, Point v) {    
+        int cut ;
         Point pLow, pHigh;
         pLow = u;
         pHigh = v;
-        
+        if(u.getY() > v.getY()){
+            pLow = v; pHigh = u;
+        }
         double yCut = this.y;
         
         double a = (pHigh.y - pLow.y) / (pHigh.x - pLow.x);
         double b = pLow.y - a * pLow.x;
       
-        double xCut = (yCut - b) / a;
+        double xCut = (this.y - pLow.y) * (pHigh.x - pLow.x)
+                     / (pHigh.y - pLow.y) + pLow.x;
+
         
         /* COMPLETAR: inicializar pLow y pHigh */
-        if(this.y == pHigh.y && this.x <= pHigh.x) {
+        if(pLow.y == pHigh.y){
+            cut = DONT_CROSS;
+        }else if(this.y == pHigh.y && this.x <= pHigh.x) {
             cut = HIGH_CROSS;
         }else if(this.y == pLow.y && this.x <= pLow.x) {
             cut = LOW_CROSS;
         }else if(this.x <= xCut && pLow.y < yCut 
                     && yCut < pHigh.y) {
             cut = CROSS;
+        }else{
+            cut = DONT_CROSS;
         }
         /* COMPLETAR: asignar un valor a cut siguiendo el analisis 
          * de casos del boletin */
-        
         return cut;
     } 
 }

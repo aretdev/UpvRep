@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=IIPMath
+comment0.text=\n\ Clase\ IIPMath\:\ clase\ de\ utilidades\ que\ implementa\ algunas\ operaciones\ \n\ matematicas\:\ IIPMath.sqrt(double)\ y\ IIPMath.log(double).\n\n\ @author\ IIP\n\ @version\ Curso\ 2018-19\n
+comment1.params=
+comment1.target=IIPMath()
+comment1.text=No\ se\ pueden\ crear\ objetos\ de\ esta\ clase.
+comment2.params=x\ epsilon
+comment2.target=double\ sqrt(double,\ double)
+comment2.text=\n\ Devuelve\ la\ ra\u00EDz\ cuadrada\ de\ x\ >\=\ 0,\ con\ error\ epsilon\ >\ 0.\ \n\ //\ COMPLETAR\ COMENTARIOS\ \n
+comment3.params=x
+comment3.target=double\ sqrt(double)
+comment3.text=\n\ Devuelve\ la\ ra\u00EDz\ cuadrada\ de\ x\ >\=\ 0,\ con\ error\ 1e-15.\ \n\ //\ COMPLETAR\ COMENTARIOS\ \n
+comment4.params=z\ epsilon
+comment4.target=double\ logBase(double,\ double)
+comment4.text=\n\ Devuelve\ log(z),\ 1/2\ <\=\ z\ <\ 1,\ con\ error\ epsilon\ >\ 0.\n\ //\ COMPLETAR\ COMENTARIOS\n
+comment5.params=x\ epsilon
+comment5.target=double\ log(double,\ double)
+comment5.text=\n\ Devuelve\ log(x),\ x\ >\ 0,\ con\ error\ epsilon\ >\ 0.\n\ //\ COMPLETAR\ COMENTARIOS\n
+comment6.params=x
+comment6.target=double\ log(double)
+comment6.text=\n\ Devuelve\ log(x),\ x\ >\ 0,\ con\ error\ 1e-15.\n\ //\ COMPLETAR\ COMENTARIOS\n
+numComments=7

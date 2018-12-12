@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Graph2DTest
+comment0.text=\n\ Clase\ Graph2DTest\:\ prueba\ simple\ de\ la\ clase\ Graph2D.\n\ Dibuja\ las\ funciones\ Math.sin(x)\ y\ Math.sin(x)/x.\n\ \n\ @author\ IIP\n\ @version\ Curso\ 2018-19\n
+comment1.params=
+comment1.target=Graph2DTest()
+comment1.text=No\ se\ pueden\ crear\ objetos\ de\ esta\ clase.
+comment2.params=
+comment2.target=void\ test()
+comment2.text=\ Dibujar\ sen(x)\ y\ sen(x)/x\ con\n\ \ x\ en\ [-1.0\ \:\ +PI*4]\ y\ f(x)\ en\ [-1.10\ \:\ +1.10].\n\ \ Representaci\u00F3n\ mediante\ puntos\ consecutivos.\n
+numComments=3
