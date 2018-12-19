@@ -63,12 +63,12 @@ private int size = 0;
      *  @param p Point, el punto.
      */
     public void remove(Point p) {
-        if(search(p) != -1) {
-        for (int j = search(p); j < size - 1;j++) {
-            group[j] = group[j + 1];
+        if(search(p) != -1) {;
+        for (int i = search(p); i < size - 1;i++) {
+            group[i] = group[i + 1];
         }
+        group[size - 1] = null;
         size--;
-    }
     }
     /** Busca en el grupo descendentemente, de mas arriba
      *  a mas abajo, el primer poligono que contiene a un 
