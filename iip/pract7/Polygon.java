@@ -69,10 +69,14 @@ public class Polygon {
     /** Devuelve el perimetro del poligono.
      *  @return double, el perimetro.
      */
-    public double perimeter() {
+   public double perimeter() {
         double per = 0;
         for(int i = 0; i < v.length; i++) {
-            per *= v[i].distance(v[i + 1]);
+            per += v[i].distance(v[i + 1]);
+            
+            if(v[i + 1]  == null){
+                per += v[i + 1].distance(v[0]);
+            }
         }
         return per;
     }   
