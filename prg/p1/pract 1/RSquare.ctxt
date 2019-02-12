@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=RSquare
+comment0.text=\n\ Dibujo\ de\ figuras\ "Recursive\ Square".\n\ De\ "Introduction\ to\ Programming\ in\ Java",\n\ Sedgewick\ &\ Wayne,\ Princeton.\n\ @author\ IIP-PRG-DSIC-ETSINF.\ pmarques\n\ @version\ Curso\ 2018-19\n
+comment1.params=
+comment1.target=RSquare()
+comment1.text=No\ hay\ objetos\ de\ esta\ clase.
+comment2.params=gd\ cX\ cY\ l
+comment2.target=void\ drawCentSquare(graph2D.Graph2D,\ double,\ double,\ double)
+comment2.text=\ Dibuja\ en\ la\ ventana\ gd\ un\ cuadrado\ solido\ de\ color\ gris\ y\ enmarcado\n\ \ en\ azul,\ con\ centro\ en\ (cX,\ cY)\ y\ lado\ l.\n
+comment3.params=
+comment3.target=void\ delay()
+comment3.text=Suspende\ temporalmente\ la\ ejecucion\ durante\ 100\ ms.
+comment4.params=gd\ n\ cX\ cY\ l
+comment4.target=void\ rSquareA(graph2D.Graph2D,\ int,\ double,\ double,\ double)
+comment4.text=\ Dibuja\ en\ la\ ventana\ gd\ una\ RSquare-A\ de\ orden\ n\ >\=\ 1,\ \n\ \ con\ centro\ en\ (cX,\ cY)\ y\ cuadrado\ central\ de\ lado\ l.\n
+comment5.params=n
+comment5.target=void\ rSquareA(int)
+comment5.text=\ Dibuja\ una\ RSquare-A\ de\ orden\ n\ >\=\ 1,\ \n\ \ longitud\ 1\ y\ centrada\ en\ (0,\ 0).\ \n
+comment6.params=gd\ n\ cX\ cY\ l
+comment6.target=void\ rSquareB(graph2D.Graph2D,\ int,\ double,\ double,\ double)
+comment6.text=\ Dibuja\ en\ la\ ventana\ gd\ una\ RSquare-B\ de\ orden\ n\ >\=\ 1,\ \n\ \ con\ centro\ en\ (cX,\ cY)\ y\ cuadrado\ central\ de\ lado\ l.\n
+comment7.params=n
+comment7.target=void\ rSquareB(int)
+comment7.text=\ Dibuja\ una\ RSquare-B\ de\ orden\ n\ >\=\ 1,\ \n\ \ longitud\ 1\ y\ centrada\ en\ (0,\ 0).\ \n
+numComments=8
