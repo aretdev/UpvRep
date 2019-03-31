@@ -86,7 +86,7 @@ public class MeasuringSortingAlgorithms {
 
         for(int t = INITALLA; t <= MAXTALLA; t += INCRTALLA) {
             int[] a = createArray(t);
-            
+            tt = 0;
             for(int mejor = 0; mejor < REPETICIONESL; mejor++){
                 fillArraySortedInAscendingOrder(a);
                 ti = System.nanoTime();
