@@ -1,2 +1,5 @@
-  práctica 4 PARTE I COMPLETA
+  Práctica 4 :
+  
+    - Parte I   -> √
+    - Parte II  -> X
   
