@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=TestSortedRegister
+comment0.text=\n\ Clase\ TestSortedRegister.\ Test\ de\ la\ clase\ SortedRegister.\n\ \n\ @author\ (PRG.\ ETSINF\ -\ UPV)\n\ @version\ (2018/19)\n
+comment1.params=
+comment1.target=TestSortedRegister()
+comment1.text=No\ hay\ objetos\ de\ esta\ clase.
+comment2.params=args
+comment2.target=void\ main(java.lang.String[])
+comment3.params=year\ in\ out
+comment3.target=void\ testUnreportedSort(int,\ java.util.Scanner,\ java.io.PrintWriter)
+comment3.text=Metodo\ de\ prueba\ de\ add(Scanner)\ y\ save(PrintWriter)\ de\ SortedRegister.
+comment4.params=year\ in\ out\ err
+comment4.target=void\ testUnreportedSort(int,\ java.util.Scanner,\ java.io.PrintWriter,\ java.io.PrintWriter)
+numComments=5
