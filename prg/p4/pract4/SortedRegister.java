@@ -127,16 +127,13 @@ public class SortedRegister {
                 handleLine(data); 
             }
             catch(NumberFormatException e){
-                err.println(data);
-                System.err.println("Linea " + line + ": " + "formato incorrecto.");
+                err.println("Linea " + line + ": " + "formato incorrecto.");
             }
             catch(IllegalArgumentException e){
-                err.println(data);
-                System.err.println("Linea " + line + ": " + e.getMessage());
+                err.println("Linea " + line + ": " + e.getMessage());
             }
             catch(ArrayIndexOutOfBoundsException e){
-                err.println(data);
-                System.err.println("Linea " + line + ": " + "linea incorrecta.");
+                err.println("Linea " + line + ": " + "linea incorrecta.");
             }finally{
                 line++;
             }

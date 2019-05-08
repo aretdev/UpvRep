@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=SortFiles
+comment0.text=\n\ Clase\ SortFiles.\ \n\ \n\ @author\ (PRG)\ \n\ @version\ (2018/19)\n
+comment1.params=
+comment1.target=SortFiles()
+comment1.text=\ \n\ Constructor\ privado,\ no\ se\ utilizara\ \n\ en\ esta\ clase\ programa\ \n
+comment2.params=args
+comment2.target=void\ main(java.lang.String[])
+comment3.params=listF\ year\ place
+comment3.target=void\ reportedSortFiles(java.io.File[],\ int,\ java.io.File)
+comment3.text=\ Clasifica\ los\ datos\ leidos\ de\ un\ array\ de\ ficheros\ de\ texto.\ \n\ \ Los\ datos\ corresponden\ a\ fechas\ de\ un\ determinado\ a\u00F1o.\ Se\ filtran\ los\ \n\ \ datos\ con\ algun\ defecto\ de\ formato,\ emitiendo\ un\ informe\ de\ errores.\ \n\ \ Precondicion\:\ El\ formato\ de\ linea\ reconocible\ es\n\ \ \ \ \ \ \ \ dia\ mes\ cantidad\n\ \ en\ donde\ dia\ y\ mes\ deben\ ser\ enteros\ correspondientes\ a\ una\ fecha\ \n\ \ valida\ del\ a\u00F1o,\ y\ cantidad\ debe\ ser\ un\ entero\ >\ 0.\n\ \ En\ un\ fichero\ "result.out"\ se\ escriben\ en\ orden\ cronologico\ las\ \n\ \ cantidades\ acumuladas\ para\ cada\ fecha.\ En\ un\ fichero\ "result.log"\ se\ \n\ \ escriben\ las\ lineas\ con\ datos\ defectuosos,\ identificando\ primero\ al\n\ \ fichero\ al\ que\ corresponden,\ con\ una\ l\u00EDnea\ previa\ como\ la\ siguiente\:\n\ \ ">>>>>\ File\ nombreFichero\ <<<<<"\ \ \ \ \ \n\ \ Si\ hay\ problemas\ de\ acceso\ a\ alguno\ de\ los\ ficheros,\ el\ proceso\ \n\ \ no\ se\ completa.\n\ \ \ \ \ \n\ \ @param\ listF\ File[],\ array\ de\ los\ ficheros\ fuente\ de\ los\ datos.\n\ \ @param\ year\ int,\ a\u00F1o\ al\ que\ corresponden\ los\ datos.\n\ \ @param\ place\ File,\ lugar\ del\ sistema\ en\ donde\ se\ guardan\ \n\ \ los\ ficheros\ .out\ y\ .log.\n
+numComments=4
