@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=NodePol
+comment0.text=\n\ Clase\ NodePol\:\ representacion\ de\ una\ estructura\ que\ asocia\ \n\ un\ dato\ (de\ tipo\ Polygon)\ y\ el\ enlace\ al\ dato\ siguiente.\n\ Se\ usa\ para\ implementar\ secuencias\ enlazadas\ de\ poligonos.\n\n\ @author\ PRG\ -\ Practica\ 5\n\ @version\ Curso\ 2018/19\n
+comment1.params=p
+comment1.target=NodePol(Polygon)
+comment1.text=\n\ Crea\ un\ NodePol\ con\ dato\ p\ y\ que\ no\ tiene\ siguiente.\n\ @param\ p\ Polygon,\ dato\ del\ nuevo\ nodo.\n
+comment2.params=p\ n
+comment2.target=NodePol(Polygon,\ NodePol)
+comment2.text=\n\ Crea\ un\ NodePol\ con\ dato\ p,\ enlazado\ a\ un\ nodo\ preexistente\ n.\ \n\ @param\ p\ Polygon,\ dato\ del\ nuevo\ nodo.\n\ @param\ n\ NodePol,\ nodo\ siguiente\ al\ que\ enlazar\ el\ nuevo\ nodo.\n
+numComments=3
