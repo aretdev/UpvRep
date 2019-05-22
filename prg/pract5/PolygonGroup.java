@@ -22,8 +22,9 @@ package pract5;
  * @version Curso 2018/19
  */
 public class PolygonGroup {    
-    private static NodePol front , back;
-    private static int size;
+    private NodePol front;
+    private NodePol back;
+    private int size;
     
     /**
      * Crea un grupo de 0 poligonos.
@@ -77,13 +78,13 @@ public class PolygonGroup {
      */
     private NodePol[] search(Point p) {
         NodePol auxPunto = this.front, auxPrev = null;
+        
         while(auxPunto != null && !auxPunto.data.inside(p)) {
             auxPrev = auxPunto;
             auxPunto = auxPunto.next;
         }
         NodePol[] result = {auxPrev, auxPunto};
         return result;
-        
     }
     
     /** Traslada en el plano el poligono seleccionado 
@@ -108,12 +109,13 @@ public class PolygonGroup {
      */
     public void remove(Point p) {
         NodePol[] polys = this.search(p);
-        if(polys[1] != null) { 
-            NodePol pointing = polys[1] , prev = polys[0];
-            
+        NodePol pointing = polys[1] , prev = polys[0];
+        if(pointing != null) { 
+            if(pointing != front){
+                prev.next = pointing.next;
+            }else{
+                front = pointing.next;}
             if(pointing == back){back = prev;}
-            else if(pointing == front){front = pointing.next; }
-            else{prev.next = pointing.next;}
             pointing = null;
             size--;
         }
@@ -126,14 +128,14 @@ public class PolygonGroup {
      */
     public void toFront(Point p) {
         NodePol[] polys = this.search(p);
-        if(polys[1] != null && polys[1] != this.front) {// Si ya esta front para que ejecutar
-            NodePol pointing = polys[1] , prev = polys[0];
+        NodePol pointing = polys[1] , prev = polys[0];
+        
+        if(pointing != null && pointing != this.front) {// Si ya esta front para que ejecutar
             prev.next = pointing.next;
             pointing.next = this.front;
             this.front = pointing;
             if(pointing == this.back) {back = prev; prev.next = null;} // En el caso que desplacemos el ultimo elemento , el prev será el nuevo back.
         }
-        
     }
     /** Situa al fondo del grupo el poligono seleccionado 
      *  mediante el punto p. El metodo no hace nada si no 
@@ -142,15 +144,15 @@ public class PolygonGroup {
      */
     public void toBack(Point p) {
         NodePol[] polys = this.search(p);
-        if(polys[1] != null && polys[1] != this.back) {// Si ya esta back para que ejecutar
+        
+        if(polys[1] != null && polys[1] != this.back) {// Si ya esta back, para que ejecutar
             NodePol pointing = polys[1] , prev = polys[0];
-            if(prev != null) {prev.next = pointing.next; } // si prev == null (pointing == front), el prev es null , generaría un error
-            else if(prev == null) {front = pointing.next;} // Al serlo , el nuevo front sería el siguiente.
+            if(pointing != front) {prev.next = pointing.next; } // si prev == null (pointing == front), el prev es null , generaría un error
+            else{front = pointing.next;} // Al serlo , el nuevo front sería el siguiente.
+            
             this.back.next = pointing;
             this.back = pointing;
             pointing.next = null;
         }
     }
-    
-
 }
